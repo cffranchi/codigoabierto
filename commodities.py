@@ -38,8 +38,7 @@ for i in range(i,n):
     miConexion.commit()
     #print(i)
     i = i + 1 
-    
-    
+        
 miConexion.close()
 
 
