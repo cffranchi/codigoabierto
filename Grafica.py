@@ -74,15 +74,6 @@ def graph4():
     agrupados.plot(kind='bar',title= tikcer + '- Rendimientos/Semana del Año')
     plt .show()
 
-"""
-def graph5():
-    cartera = ['YPF','GGAL','AMZN','AAPL','TLT','SHY','IEF']
-    data = pd.DataFrame(columns=cartera)
-    for ticker in cartera:
-        data[ticker] = yf.download(ticker, period='10y')['Adj Close']
-    data = data.pct_change().dropna().mean(axis=1)
-    pf.create_full_tear_sheet(data)
-"""
 def fin ():
     root.destroy()
 
